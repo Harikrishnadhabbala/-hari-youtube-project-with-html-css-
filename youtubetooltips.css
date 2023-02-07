@@ -1,0 +1,68 @@
+.notification-bell-div,
+.upload-video-div,
+.google-apps-div {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -22px;
+    background-color: gray;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-button:hover,
+.upload-video-div:hover,
+.google-apps-div:hover,
+.notification-bell-div:hover,
+.top-main-dp:hover,
+.ham-burger-menu:hover,
+.youtube-logo:hover {
+    cursor: pointer;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-video-div:hover .tooltip,
+.google-apps-div:hover .tooltip,
+.notification-bell-div:hover .tooltip {
+    position: absolute;
+    bottom: -25px;
+    justify-content: center;
+    background-color: gray;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    opacity: 1;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    border-radius: 2px;
+}
+.voice-search-button:hover .tooltip {
+    bottom: -33px;
+    left: -40px;
+}
+.upload-video-div:hover .tooltip {
+    bottom: -45px;
+    right: -13px;
+}
+.google-apps-div:hover .tooltip {
+    right: -30px;
+    bottom: -45px;
+}
+.notification-bell-div:hover .tooltip {
+    right: -30px;
+    bottom: -45px;
+}
